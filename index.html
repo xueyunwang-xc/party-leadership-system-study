@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>党的领导制度专题｜四川紧缺选调</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div>
+        <p class="kicker">四川紧缺选调 · 新思想专题</p>
+        <h1>党的领导制度</h1>
+      </div>
+      <div class="top-actions">
+        <button id="recallModeBtn" class="button" type="button" aria-pressed="false">开启闭卷</button>
+        <button id="copyReportBtn" class="button" type="button">复制答题报告</button>
+        <button id="printBtn" class="button" type="button">打印</button>
+        <a class="button" href="#exam-card">回到顶部</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="study-layout">
+    <aside class="study-nav" aria-label="专题目录">
+      <div class="nav-title">学习顺序</div>
+      <nav>
+        <a href="#exam-card">1. 考情判断</a>
+        <a href="#framework">2. 主线框架</a>
+        <a href="#system-six">3. 六项制度</a>
+        <a href="#distinctions">4. 易混帽子</a>
+        <a href="#self-revolution">5. 自我革命</a>
+        <a href="#double-revolution">6. 双革命对比</a>
+        <a href="#system-position">7. 制度定位</a>
+        <a href="#party-rules">8. 组织规则</a>
+        <a href="#political-building">9. 政治建设</a>
+        <a href="#true-questions">10. 本地真题</a>
+        <a href="#practice-questions">11. 预测练习</a>
+        <a href="#closed-recall">12. 闭卷输出</a>
+      </nav>
+      <div class="progress-tool">
+        <div class="progress-label"><span>专题进度</span><strong id="progressText">0 / 9</strong></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <label><input class="progress-check" data-step="framework" type="checkbox"> 框架已复述</label>
+        <label><input class="progress-check" data-step="system" type="checkbox"> 六项制度已掌握</label>
+        <label><input class="progress-check" data-step="revolution" type="checkbox"> 自我革命达到80%</label>
+        <label><input class="progress-check" data-step="double" type="checkbox"> 双革命对比达到80%</label>
+        <label><input class="progress-check" data-step="position" type="checkbox"> 制度定位达到80%</label>
+        <label><input class="progress-check" data-step="rules" type="checkbox"> 组织规则达到80%</label>
+        <label><input class="progress-check" data-step="politics" type="checkbox"> 政治建设帽子已掌握</label>
+        <label><input class="progress-check" data-step="true" type="checkbox"> 真题达到80%</label>
+        <label><input class="progress-check" data-step="practice" type="checkbox"> 练习达到80%</label>
+      </div>
+    </aside>
+
+    <main>
+      <section id="exam-card" class="section section-intro">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">01 / 考情卡</p>
+            <h2>先判断考什么，再决定背多深</h2>
+          </div>
+          <span class="priority priority-s">个人优先级 S</span>
+        </div>
+        <div class="exam-grid">
+          <div class="exam-metric">
+            <span>教材位置</span>
+            <strong>WXY 第三章</strong>
+            <p>坚持党的全面领导，制度体系是章节收束层。</p>
+          </div>
+          <div class="exam-metric">
+            <span>本地真题</span>
+            <strong>2021—2026持续出现</strong>
+            <p>固定帽子、边界辨析、材料应用三种考法并存。</p>
+          </div>
+          <div class="exam-metric">
+            <span>2027预测</span>
+            <strong>高概率</strong>
+            <p>教材核心，且“六项制度角色”可改造成多选或近义帽子题。</p>
+          </div>
+          <div class="exam-metric">
+            <span>你的风险</span>
+            <strong>相邻帽子串线</strong>
+            <p>近期把“根本组织原则和领导制度”错选为“党领导一切”。</p>
+          </div>
+        </div>
+        <div class="evidence-strip">
+          <strong>稳定命题规律</strong>
+          <span>最本质特征 / 最大优势 / 最高政治领导力量错配</span>
+          <span>“党领导一切”偷换为“党管理一切”</span>
+          <span>民主集中制与党的领导制度体系混淆</span>
+          <span>正面表述很多，但只有一个精准回应题干帽子</span>
+        </div>
+      </section>
+
+      <section id="framework" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">02 / 主线框架</p>
+            <h2>四层结构：定性、范围、原则、制度</h2>
+          </div>
+          <button class="mark-button" type="button" data-mark="framework">标记已复述</button>
+        </div>
+
+        <figure class="system-map" aria-labelledby="map-caption">
+          <figcaption id="map-caption">党的全面领导知识结构图</figcaption>
+          <div class="map-row map-root">
+            <div class="map-node map-node-strong">
+              <span>根本领导制度</span>
+              <strong>党的领导制度</strong>
+              <small>在中国特色社会主义制度体系中居于统领地位</small>
+            </div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-row map-four">
+            <div class="map-node">
+              <span>是什么</span>
+              <strong>最本质特征</strong>
+              <small>中国共产党领导</small>
+            </div>
+            <div class="map-node">
+              <span>制度定位</span>
+              <strong>最大优势</strong>
+              <small>中国共产党领导</small>
+            </div>
+            <div class="map-node">
+              <span>谁领导</span>
+              <strong>最高政治领导力量</strong>
+              <small>中国共产党</small>
+            </div>
+            <div class="map-node">
+              <span>最高原则</span>
+              <strong>党中央集中统一领导</strong>
+              <small>维护权威与集中统一领导</small>
+            </div>
+          </div>
+        </figure>
+
+        <div class="logic-table" role="table" aria-label="党的领导四层逻辑">
+          <div class="logic-row logic-head" role="row">
+            <span role="columnheader">层次</span><span role="columnheader">必须掌握</span><span role="columnheader">考试中的排除动作</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">为什么必须坚持</strong>
+            <span role="cell" class="memory-answer">最大国情、最本质特征、最大优势、复兴根本保证</span>
+            <span role="cell">题干问不同“帽子”时，不能因为答案都正面就混选。</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">领导覆盖哪里</strong>
+            <span role="cell" class="memory-answer">全面的、系统的、整体的；贯穿各领域各方面各环节</span>
+            <span role="cell">排除“只管政治”“局限某阶段”“党直接包办一切”。</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">怎样发挥作用</strong>
+            <span role="cell" class="memory-answer">把方向、谋大局、定政策、促改革；总揽全局、协调各方</span>
+            <span role="cell">领导不是替代人大、政府、政协、监委、法院、检察院依法履职。</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">如何稳定落实</strong>
+            <span role="cell" class="memory-answer">以根本领导制度统领，以六项制度形成完整体系</span>
+            <span role="cell">“党的领导制度”与“民主集中制”不是同一个问法。</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="system-six" class="section section-tint">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">03 / 六项制度体系</p>
+            <h2>不只背清单，还要知道每项解决什么</h2>
+          </div>
+          <button class="mark-button" type="button" data-mark="system">标记已掌握</button>
+        </div>
+        <p class="memory-line">记忆逻辑：<span class="memory-answer">初心奠基 → 中央定向 → 全面覆盖 → 人民立场 → 能力落实 → 从严保障</span></p>
+        <div class="six-grid">
+          <article class="system-item">
+            <div class="system-index">1</div>
+            <div><h3>建立不忘初心、牢记使命的制度</h3><p class="memory-answer">定位：奠定坚实基础。解决“党为什么出发、长期执政不能忘什么”。</p></div>
+          </article>
+          <article class="system-item">
+            <div class="system-index">2</div>
+            <div><h3>完善维护党中央权威和集中统一领导的各项制度</h3><p class="memory-answer">定位：明确最高原则。核心对象是党中央，不得层层讲“核心”。</p></div>
+          </article>
+          <article class="system-item">
+            <div class="system-index">3</div>
+            <div><h3>健全党的全面领导制度</h3><p class="memory-answer">定位：主体内容。保证党在各种组织中发挥领导作用。</p></div>
+          </article>
+          <article class="system-item">
+            <div class="system-index">4</div>
+            <div><h3>健全为人民执政、靠人民执政各项制度</h3><p class="memory-answer">定位：价值追求。巩固阶级基础，厚植群众基础。</p></div>
+          </article>
+          <article class="system-item">
+            <div class="system-index">5</div>
+            <div><h3>健全提高党的执政能力和领导水平制度</h3><p class="memory-answer">定位：实践要求。提高把方向、谋大局、定政策、促改革的能力。</p></div>
+          </article>
+          <article class="system-item">
+            <div class="system-index">6</div>
+            <div><h3>完善全面从严治党制度</h3><p class="memory-answer">定位：坚强保证。保持党的先进性和纯洁性。</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="distinctions" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">04 / 易混辨析</p>
+            <h2>题干帽子不同，答案不能串线</h2>
+          </div>
+        </div>
+        <div class="compare-wrap">
+          <table class="compare-table">
+            <thead><tr><th>题干问法</th><th>规范答案</th><th>常见误选</th></tr></thead>
+            <tbody>
+              <tr><td>中国特色社会主义最本质的特征</td><td class="memory-answer">中国共产党领导</td><td>人民当家作主、依法治国</td></tr>
+              <tr><td>中国特色社会主义制度的最大优势</td><td class="memory-answer">中国共产党领导</td><td>集中力量办大事</td></tr>
+              <tr><td>最高政治领导力量</td><td class="memory-answer">中国共产党</td><td>全国人民代表大会</td></tr>
+              <tr><td>党的领导的最高原则</td><td class="memory-answer">党中央集中统一领导</td><td>民主集中制</td></tr>
+              <tr><td>我国的根本领导制度</td><td class="memory-answer">党的领导制度</td><td>人民代表大会制度</td></tr>
+              <tr><td>党的根本组织原则和领导制度</td><td class="memory-answer">民主集中制</td><td>党领导一切</td></tr>
+              <tr><td>加强党的政治建设的首要任务</td><td class="memory-answer">坚决做到“两个维护”</td><td>四个意识、四个自信</td></tr>
+              <tr><td>坚持和发展中国特色社会主义的必由之路</td><td class="memory-answer">坚持党的全面领导</td><td>贯彻新发展理念</td></tr>
+              <tr><td>新时代我国发展壮大的必由之路</td><td class="memory-answer">贯彻新发展理念</td><td>坚持党的全面领导</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="boundary-note">
+          <strong>边界句：</strong>
+          <span class="memory-answer">党领导一切，不等于党直接管理一切。党发挥领导核心作用，各类国家机关和组织仍依法依章程履行职责。</span>
+        </div>
+      </section>
+
+      <section id="self-revolution" class="section section-tint quiz-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">05 / 深入推进党的自我革命</p>
+            <h2>“战略目标”来自“九个以”，不是孤立帽子</h2>
+            <p>2024年四川省属事业单位直接考过战略目标。川选真题尚未检索到同句直考，但它属于最新政治理论固定词位，个人优先级为A。</p>
+          </div>
+          <button class="mark-button" type="button" data-mark="revolution">标记已掌握</button>
+        </div>
+
+        <div class="three-stage-grid">
+          <article class="stage-card">
+            <span>为什么做</span>
+            <strong>目的、目标、主攻方向</strong>
+            <p><b class="memory-answer">引领伟大社会革命</b>是根本目的；<b class="memory-answer">跳出历史周期率</b>是战略目标；<b class="memory-answer">解决大党独有难题</b>是主攻方向。</p>
+          </article>
+          <article class="stage-card">
+            <span>靠什么定向</span>
+            <strong>保证、遵循、动力</strong>
+            <p><b class="memory-answer">党中央集中统一领导</b>是根本保证；<b class="memory-answer">新时代中国特色社会主义思想</b>是根本遵循；<b class="memory-answer">自我监督和人民监督相结合</b>是强大动力。</p>
+          </article>
+          <article class="stage-card">
+            <span>怎样落地</span>
+            <strong>途径、着力点、抓手</strong>
+            <p><b class="memory-answer">健全全面从严治党体系</b>是有效途径；<b class="memory-answer">锻造坚强组织、建设过硬队伍</b>是重要着力点；<b class="memory-answer">正风肃纪反腐</b>是重要抓手。</p>
+          </article>
+        </div>
+
+        <div class="logic-table" role="table" aria-label="深入推进党的自我革命九个以">
+          <div class="logic-row logic-head" role="row"><span>题干帽子</span><span>规范答案</span><span>理解</span></div>
+          <div class="logic-row"><strong>根本保证</strong><span class="memory-answer">坚持党中央集中统一领导</span><span>保证自我革命方向一致、行动统一。</span></div>
+          <div class="logic-row"><strong>根本目的</strong><span class="memory-answer">引领伟大社会革命</span><span>把党自身建设好，最终为了推动党和国家事业。</span></div>
+          <div class="logic-row"><strong>根本遵循</strong><span class="memory-answer">新时代中国特色社会主义思想</span><span>回答用什么思想指导自我革命。</span></div>
+          <div class="logic-row"><strong>战略目标</strong><span class="memory-answer">跳出历史周期率</span><span>解决政权长期执政后兴衰更替的根本风险。</span></div>
+          <div class="logic-row"><strong>主攻方向</strong><span class="memory-answer">解决大党独有难题</span><span>对准大党长期执政面临的特殊难题。</span></div>
+          <div class="logic-row"><strong>有效途径</strong><span class="memory-answer">健全全面从严治党体系</span><span>靠完整制度体系持续推进。</span></div>
+          <div class="logic-row"><strong>重要着力点</strong><span class="memory-answer">锻造坚强组织、建设过硬队伍</span><span>落到组织和干部队伍。</span></div>
+          <div class="logic-row"><strong>重要抓手</strong><span class="memory-answer">正风肃纪反腐</span><span>用具体治理行动解决突出问题。</span></div>
+          <div class="logic-row"><strong>强大动力</strong><span class="memory-answer">自我监督和人民监督相结合</span><span>内部监督与外部监督共同推动。</span></div>
+        </div>
+
+        <div class="boundary-note"><strong>这次只先钉住三组：</strong><span>战略目标＝跳出历史周期率；主攻方向＝解决大党独有难题；根本目的＝引领伟大社会革命。三项最容易互换。</span></div>
+        <div id="revolutionQuiz" class="quiz-list quiz-space"></div>
+        <div class="quiz-actions">
+          <button class="button button-primary" type="button" data-submit="revolution">提交专项</button>
+          <button class="button" type="button" data-reset="revolution">重做</button>
+          <output id="revolutionResult" class="quiz-result" aria-live="polite">尚未提交</output>
+        </div>
+      </section>
+
+      <section id="double-revolution" class="section quiz-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">06 / 伟大社会革命与伟大自我革命</p>
+            <h2>先看改造对象，再判断属于哪一种革命</h2>
+            <p>本地独立川选试卷中，2022届两批次、2025届和2026届均出现直接或强相邻考法。2026届第22题直接考“自我革命的根本目的”。</p>
+          </div>
+          <button class="mark-button" type="button" data-mark="double">标记已掌握</button>
+        </div>
+
+        <div class="dual-revolution-grid" aria-label="伟大自我革命与伟大社会革命对比">
+          <article class="dual-card dual-card-self">
+            <span>改造主观世界</span>
+            <h3>伟大自我革命</h3>
+            <dl>
+              <div><dt>主体</dt><dd class="memory-answer">中国共产党</dd></div>
+              <div><dt>对象</dt><dd class="memory-answer">党自身</dd></div>
+              <div><dt>主要内容</dt><dd>发现问题、纠正偏差，推进自我净化、自我完善、自我革新、自我提高。</dd></div>
+              <div><dt>主要作用</dt><dd class="memory-answer">引领、保障和推动伟大社会革命</dd></div>
+            </dl>
+          </article>
+          <div class="dual-link" aria-hidden="true">
+            <span>引领、保障</span><strong>⇄</strong><span>锻造、促进</span>
+          </div>
+          <article class="dual-card dual-card-social">
+            <span>改造客观世界</span>
+            <h3>伟大社会革命</h3>
+            <dl>
+              <div><dt>主体</dt><dd class="memory-answer">党领导人民</dd></div>
+              <div><dt>对象</dt><dd class="memory-answer">社会和客观世界</dd></div>
+              <div><dt>主要内容</dt><dd>推进革命、建设、改革和新时代坚持发展中国特色社会主义。</dd></div>
+              <div><dt>主要作用</dt><dd class="memory-answer">在伟大实践中锻造和促进党的自我革命</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="memory-line double-memory-line">
+          <strong>一条判断线：</strong>
+          <span class="memory-answer">改造党自身＝自我革命；党领导人民改造社会＝社会革命。工程修党，事业改造社会。</span>
+        </div>
+
+        <h3 class="topic-heading">为什么称为“伟大社会革命”</h3>
+        <div class="three-stage-grid reason-grid">
+          <article class="stage-card"><span>范围广</span><strong>改造整个社会</strong><p>涉及经济、政治、文化、社会、生态文明等多个领域，不是一次局部活动。</p></article>
+          <article class="stage-card"><span>目标高</span><strong>推进现代化与民族复兴</strong><p>新时代的主线是坚持和发展中国特色社会主义，以中国式现代化推进中华民族伟大复兴。</p></article>
+          <article class="stage-card"><span>任务久</span><strong>不断解决新矛盾</strong><p>旧问题解决后还会出现新任务，必须持续改革不适应发展的体制机制。</p></article>
+        </div>
+
+        <div class="analogy-panel health-analogy">
+          <strong>卫健情境理解</strong>
+          <p>完善公共卫生、医疗服务、医疗保障、药品供应和基层卫生服务体系，是对社会制度和运行方式的持续改造，可以类比“社会革命”；领导这一事业的党组织同时整治腐败、改进作风、提高专业化治理能力，可以类比“自我革命”。队伍不过硬，改革难落实；改革中的新任务又会检验并促进队伍建设。</p>
+        </div>
+
+        <h3 class="topic-heading">考试最爱错配的固定帽子</h3>
+        <div class="logic-table" role="table" aria-label="自我革命固定帽子">
+          <div class="logic-row logic-head" role="row"><span>题干帽子</span><span>规范答案</span><span>不能混成</span></div>
+          <div class="logic-row"><strong>根本目的</strong><span class="memory-answer">引领伟大社会革命</span><span>跳出历史周期率</span></div>
+          <div class="logic-row"><strong>战略目标</strong><span class="memory-answer">跳出历史周期率</span><span>解决大党独有难题</span></div>
+          <div class="logic-row"><strong>主攻方向</strong><span class="memory-answer">解决大党独有难题</span><span>引领伟大社会革命</span></div>
+        </div>
+
+        <div class="boundary-note">
+          <strong>高频陷阱：</strong>
+          <span>今天的“社会革命”不等于只能采取武装斗争。革命、建设、改革和新时代坚持发展中国特色社会主义，都是党领导人民推进社会深刻变革的不同历史阶段。</span>
+        </div>
+
+        <div id="doubleQuiz" class="quiz-list quiz-space"></div>
+        <div class="quiz-actions">
+          <button class="button button-primary" type="button" data-submit="double">提交对比练习</button>
+          <button class="button" type="button" data-reset="double">重做</button>
+          <output id="doubleResult" class="quiz-result" aria-live="polite">尚未提交</output>
+        </div>
+      </section>
+
+      <section id="system-position" class="section quiz-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">07 / 制度体系中的统领与关键</p>
+            <h2>一条链解决“四梁八柱、统领、关键、执行好”</h2>
+            <p>这不是四个互不相干的答案，而是在描述中国特色社会主义制度如何形成整体、如何运转。</p>
+          </div>
+          <button class="mark-button" type="button" data-mark="position">标记已掌握</button>
+        </div>
+
+        <div class="concept-chain" aria-label="制度定位逻辑链">
+          <div><span>制度骨架</span><strong class="memory-answer">根本制度、基本制度、重要制度</strong><small>起“四梁八柱”作用</small></div>
+          <i>→</i>
+          <div><span>统领制度</span><strong class="memory-answer">党的领导制度</strong><small>在中国特色社会主义制度体系中居于统领地位</small></div>
+          <i>→</i>
+          <div><span>治理关键</span><strong class="memory-answer">党的领导制度</strong><small>是国家治理体系和治理能力现代化的关键</small></div>
+          <i>→</i>
+          <div><span>优势转化</span><strong class="memory-answer">执行好</strong><small>不是只“制定好”</small></div>
+        </div>
+
+        <div class="analogy-panel">
+          <strong>小白类比</strong>
+          <p>根本制度、基本制度、重要制度像一栋楼的梁柱；党的领导制度像统一调度整栋楼运行的中枢。梁柱齐全但没有统一协调，制度优势仍可能无法转化为治理效能，所以考题最后落到“能不能执行好”。</p>
+        </div>
+        <div class="boundary-note"><strong>两个“关键”不要混：</strong><span>“中国共产党领导是国家治理体系的核心”；“党的领导制度是中国特色社会主义制度建设的关键，也是国家治理体系和治理能力现代化的关键”。题干问制度，答案仍是党的领导制度。</span></div>
+        <div id="positionQuiz" class="quiz-list quiz-space"></div>
+        <div class="quiz-actions">
+          <button class="button button-primary" type="button" data-submit="position">提交专项</button>
+          <button class="button" type="button" data-reset="position">重做</button>
+          <output id="positionResult" class="quiz-result" aria-live="polite">尚未提交</output>
+        </div>
+      </section>
+
+      <section id="party-rules" class="section section-tint quiz-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">08 / 民主集中制与党内组织规则</p>
+            <h2>把四个服从、重大问题决策和选举例外放回同一框架</h2>
+            <p>它们都不是孤立党务常识，而是《中国共产党章程》规定的民主集中制基本原则。</p>
+          </div>
+          <button class="mark-button" type="button" data-mark="rules">标记已掌握</button>
+        </div>
+
+        <div class="six-grid compact-grid">
+          <article class="system-item"><div class="system-index">1</div><div><h3>服从关系</h3><p class="memory-answer">四个服从，核心是全党服从党的全国代表大会和中央委员会。</p></div></article>
+          <article class="system-item"><div class="system-index">2</div><div><h3>领导机关产生</h3><p class="memory-answer">原则上由选举产生；派出的代表机关和在非党组织中的党组除外。</p></div></article>
+          <article class="system-item"><div class="system-index">3</div><div><h3>最高领导机关</h3><p class="memory-answer">党的全国代表大会和它所产生的中央委员会。</p></div></article>
+          <article class="system-item"><div class="system-index">4</div><div><h3>上下级关系</h3><p>上级听取下级意见；下级请示报告，也要独立负责解决职责范围内问题。</p></div></article>
+          <article class="system-item"><div class="system-index">5</div><div><h3>委员会决策</h3><p class="memory-answer">集体领导和个人分工负责相结合；重大问题实行四步决策。</p></div></article>
+          <article class="system-item"><div class="system-index">6</div><div><h3>反对个人崇拜</h3><p>领导人活动接受党和人民监督，同时维护代表党和人民利益的领导人威信。</p></div></article>
+        </div>
+
+        <h3 class="topic-heading">四个服从：从个人一直收束到全党</h3>
+        <div class="obedience-line">
+          <span><b>个人</b>服从党的组织</span><i>→</i><span><b>少数</b>服从多数</span><i>→</i><span><b>下级组织</b>服从上级组织</span><i>→</i><span><b>全党</b>服从党的全国代表大会和中央委员会</span>
+        </div>
+        <div class="name-compare">
+          <article><span>党内机关</span><strong class="memory-answer">党的全国代表大会</strong><p>与其产生的中央委员会共同构成党的最高领导机关。</p></article>
+          <article><span>国家机关</span><strong class="memory-answer">全国人民代表大会</strong><p>是最高国家权力机关。</p></article>
+        </div>
+        <div class="boundary-note"><strong>名称纠错：</strong><span>没有“党的全国人民代表大会”这一规范名称。看到“党的”就接“全国代表大会”；看到“最高国家权力机关”才选“全国人民代表大会”。</span></div>
+
+        <h3 class="topic-heading">重大问题怎么形成决定</h3>
+        <div class="decision-flow">
+          <span><b>集体领导</b><small>不能个人说了算</small></span><i>→</i>
+          <span><b>民主集中</b><small>充分讨论后形成统一意见</small></span><i>→</i>
+          <span><b>个别酝酿</b><small>会前沟通研究成熟</small></span><i>→</i>
+          <span><b>会议决定</b><small>通过正式会议集体作出</small></span>
+        </div>
+        <div class="boundary-note"><strong>高频陷阱：</strong><span>是“凡属重大问题”，不是“党内所有问题”；最终由党的委员会集体讨论作出决定，不是书记个人决定。</span></div>
+
+        <h3 class="topic-heading">“三重一大”是民主集中制的应用</h3>
+        <div class="four-tag-row">
+          <span>重大决策</span><span>重要干部任免</span><span>重大项目安排</span><span>大额资金使用</span>
+        </div>
+        <p class="plain-note">共同程序要求：<b class="memory-answer">必须经集体讨论作出决定</b>。本地资料对“重大决策/重大事项决策”和“大额/大额度”存在文字差异，考试重点是四类事项和集体决策，不必在同义词上耗时。</p>
+
+        <h3 class="topic-heading">为什么领导机关原则选举、但有两个例外</h3>
+        <div class="logic-table">
+          <div class="logic-row logic-head"><span>类别</span><span>产生方式</span><span>原因</span></div>
+          <div class="logic-row"><strong>党的各级领导机关</strong><span class="memory-answer">原则上由选举产生</span><span>体现党内民主和组织授权。</span></div>
+          <div class="logic-row"><strong>派出的代表机关</strong><span class="memory-answer">不适用选举产生规则</span><span>它由上级党组织派出，权力来源是上级授权。</span></div>
+          <div class="logic-row"><strong>非党组织中的党组</strong><span class="memory-answer">不适用选举产生规则</span><span>它是党在非党组织中设立的领导机构，由批准设立它的党组织决定。</span></div>
+        </div>
+
+        <div id="rulesQuiz" class="quiz-list quiz-space"></div>
+        <div class="quiz-actions">
+          <button class="button button-primary" type="button" data-submit="rules">提交专项</button>
+          <button class="button" type="button" data-reset="rules">重做</button>
+          <output id="rulesResult" class="quiz-result" aria-live="polite">尚未提交</output>
+        </div>
+      </section>
+
+      <section id="political-building" class="section quiz-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">09 / 党的政治建设专项</p>
+            <h2>第20题不能只记D，要把五组帽子分开</h2>
+            <p>你本轮第20题答对，但主动提取不稳定。本节用“建设定位—规范要求—首要任务—第一位问题—日常基础”建立层级。</p>
+          </div>
+          <button class="mark-button" type="button" data-mark="politics">标记已掌握</button>
+        </div>
+
+        <div class="exam-grid">
+          <div class="exam-metric">
+            <span>建设定位</span>
+            <strong>根本性建设</strong>
+            <p class="memory-answer">党的政治建设决定党的建设方向和效果，并在党的各项建设中发挥统领作用。</p>
+          </div>
+          <div class="exam-metric">
+            <span>根本要求</span>
+            <strong>旗帜鲜明讲政治</strong>
+            <p class="memory-answer">这是我们党作为马克思主义政党的根本要求，不是“首要任务”。</p>
+          </div>
+          <div class="exam-metric">
+            <span>首要任务</span>
+            <strong>服从中央、维护权威</strong>
+            <p class="memory-answer">保证全党服从中央，坚持党中央权威和集中统一领导；集中体现为做到“两个维护”。</p>
+          </div>
+          <div class="exam-metric">
+            <span>第一位问题</span>
+            <strong>政治方向</strong>
+            <p class="memory-answer">政治方向是党生存发展第一位的问题，不能与“政治建设的首要任务”互换。</p>
+          </div>
+        </div>
+
+        <div class="logic-table" role="table" aria-label="党的政治建设帽子辨析">
+          <div class="logic-row logic-head" role="row">
+            <span role="columnheader">题干触发词</span><span role="columnheader">规范答案</span><span role="columnheader">为什么</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">党的什么建设是根本性建设</strong>
+            <span role="cell" class="memory-answer">党的政治建设</span>
+            <span role="cell">它决定党的建设方向和效果；思想建设才是基础性建设。</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">马克思主义政党的根本要求</strong>
+            <span role="cell" class="memory-answer">旗帜鲜明讲政治</span>
+            <span role="cell">“讲政治”说明政党的政治属性，不回答当前首要先完成什么任务。</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">党的政治建设的首要任务</strong>
+            <span role="cell" class="memory-answer">保证全党服从中央，坚持党中央权威和集中统一领导</span>
+            <span role="cell">全党只有形成统一意志和行动，政治建设的其他要求才能落实。</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">党生存发展第一位的问题</strong>
+            <span role="cell" class="memory-answer">政治方向</span>
+            <span role="cell">这是“往哪里走”的方向问题，不是组织执行层面的首要任务。</span>
+          </div>
+          <div class="logic-row" role="row">
+            <strong role="cell">基础性、经常性工作</strong>
+            <span role="cell" class="memory-answer">营造良好政治生态</span>
+            <span role="cell">强调长期环境建设，不能替代政治建设的首要任务。</span>
+          </div>
+        </div>
+
+        <div class="boundary-note">
+          <strong>一题吃透：</strong>
+          <span>“保证全党服从中央”和“坚持党中央权威和集中统一领导”是同一首要任务的两个组成部分，所以第20题只能选①②。④民主集中制虽然重要，但它是党的根本组织原则和领导制度，不是党的政治建设首要任务。</span>
+        </div>
+
+        <div class="section-heading subsection-heading">
+          <div>
+            <p class="section-no">即时迁移</p>
+            <h3>1道真题 + 1道个人错题 + 3道变式题</h3>
+          </div>
+          <span class="source-badge source-badge-warn">真题与自编题已标明</span>
+        </div>
+        <div id="politicalQuiz" class="quiz-list"></div>
+        <div class="quiz-actions">
+          <button class="button button-primary" type="button" data-submit="political">提交专项</button>
+          <button class="button" type="button" data-reset="political">重做</button>
+          <output id="politicalResult" class="quiz-result" aria-live="polite">尚未提交</output>
+        </div>
+      </section>
+
+      <section id="true-questions" class="section section-tint quiz-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">10 / 本地真题</p>
+            <h2>11题真题检验</h2>
+            <p>题目来自本地川选真题库。2026题为考生回忆版，答案依教材规范核定；2023年第4题已纠正旧数据键错误。</p>
+          </div>
+          <span class="source-badge">题目与答案分离</span>
+        </div>
+        <div id="trueQuiz" class="quiz-list"></div>
+        <div class="quiz-actions">
+          <button class="button button-primary" type="button" data-submit="true">提交真题</button>
+          <button class="button" type="button" data-reset="true">重做</button>
+          <output id="trueResult" class="quiz-result" aria-live="polite">尚未提交</output>
+        </div>
+      </section>
+
+      <section id="practice-questions" class="section quiz-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">11 / 预测练习</p>
+            <h2>10题近似选项训练</h2>
+            <p>以下为依据WXY教材与本地真题陷阱编制的自编预测题，不是真题。</p>
+          </div>
+          <span class="source-badge source-badge-warn">自编题已标注</span>
+        </div>
+        <div id="practiceQuiz" class="quiz-list"></div>
+        <div class="quiz-actions">
+          <button class="button button-primary" type="button" data-submit="practice">提交练习</button>
+          <button class="button" type="button" data-reset="practice">重做</button>
+          <output id="practiceResult" class="quiz-result" aria-live="polite">尚未提交</output>
+        </div>
+      </section>
+
+      <section id="closed-recall" class="section section-tint">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">12 / 闭卷输出</p>
+            <h2>达到第一名水平的最低输出</h2>
+          </div>
+        </div>
+        <div class="recall-grid">
+          <label>1. 不看资料，写出四组核心定位
+            <textarea data-recall="core" rows="5" placeholder="最本质特征、最大优势、最高政治领导力量、最高原则……"></textarea>
+          </label>
+          <label>2. 写出六项制度及其角色
+            <textarea data-recall="six" rows="7" placeholder="不能只列清单，要写基础、最高原则、主体内容、价值追求、实践要求、坚强保证。"></textarea>
+          </label>
+          <label>3. 用一句话解释“党领导一切≠党管理一切”
+            <textarea data-recall="boundary" rows="4" placeholder="写清党和各类机关、组织的关系。"></textarea>
+          </label>
+          <label>4. 双向写出两条“必由之路”
+            <textarea data-recall="road" rows="4" placeholder="坚持党的全面领导对应什么？贯彻新发展理念对应什么？"></textarea>
+          </label>
+          <label>5. 写出党的政治建设五组定位
+            <textarea data-recall="political" rows="5" placeholder="根本性建设、根本要求、首要任务、第一位问题、基础性经常性工作。"></textarea>
+          </label>
+          <label>6. 写出自我革命“九个以”中最易混的三项
+            <textarea data-recall="revolution" rows="4" placeholder="战略目标、主攻方向、根本目的分别是什么？"></textarea>
+          </label>
+          <label>7. 写出制度定位逻辑链
+            <textarea data-recall="position" rows="4" placeholder="四梁八柱、统领地位、治理现代化关键、执行好。"></textarea>
+          </label>
+          <label>8. 写出民主集中制三组规则
+            <textarea data-recall="rules" rows="7" placeholder="四个服从；重大问题四步；领导机关选举原则及例外。"></textarea>
+          </label>
+          <label>9. 用主体和对象区分两种革命
+            <textarea data-recall="double-objects" rows="5" placeholder="谁进行自我革命、改造谁？谁领导社会革命、改造什么？"></textarea>
+          </label>
+          <label>10. 写出两种革命为什么相互促进
+            <textarea data-recall="double-relation" rows="5" placeholder="自我革命怎样作用于社会革命？社会革命又怎样促进自我革命？"></textarea>
+          </label>
+        </div>
+        <div class="recall-actions">
+          <button id="saveRecallBtn" class="button button-primary" type="button">保存闭卷答案</button>
+          <span id="saveStatus" class="save-status" aria-live="polite"></span>
+        </div>
+        <div class="boundary-note">
+          作答数据只保存在当前设备，不会自动上传。完成后点击页面顶部“复制答题报告”，再发送给辅导老师。
+        </div>
+      </section>
+
+      <section class="section source-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-no">依据 / 口径</p>
+            <h2>本页使用的本地材料</h2>
+          </div>
+        </div>
+        <ul class="source-list">
+          <li>《习近平新时代中国特色社会主义思想概论》编写组，第三章“坚持党的全面领导”。</li>
+          <li>《2027四川紧缺选调〈综合测试〉基础讲义：新思想》，第二章“坚持党的全面领导”。</li>
+          <li>2021—2026届四川紧缺选调本地真题及原始PDF；转换文本仅用于检索。</li>
+          <li>《中共中央关于加强党的政治建设的意见》相关规范表述；本地《母题精讲上册》“党的政治建设”知识点。</li>
+          <li>2024年四川省属事业单位真题第44题：深入推进党的自我革命“九个以”。</li>
+          <li>2022届四川紧缺选调第一批判断第2题、第二批单选第8题：伟大社会革命的历史阶段及长期推进。</li>
+          <li>2026届四川紧缺选调回忆版第22、30题：自我革命根本目的及两种革命相互联系。</li>
+          <li>WXY教材第十七章：以伟大自我革命引领伟大社会革命，以伟大社会革命促进伟大自我革命。</li>
+          <li>《中国共产党章程》第十条：民主集中制六项基本原则；本地《母题精讲上册》知识点12。</li>
+          <li>个人学习记录：2026-07-20第三章真题12/13；2026-08-21再次错过“民主集中制”帽子。</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
